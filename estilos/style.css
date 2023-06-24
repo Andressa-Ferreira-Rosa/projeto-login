@@ -8,3 +8,61 @@ Paleta de cores
 #E3D3C4 bege
 #FDFBFF branco suave
 */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinza: #161A1E;
+    --vinho: #67151B;
+    --rosa: #e8aa9b60;
+    --bege: #E3D3C4;
+    --branco: #FDFBFF;
+}
+
+body, html{
+    background-color: var(--vinho);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: var(--bege);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.579);
+    display: block;
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    background: #161A1E url(../imagens/pexels-bruno-thethe-2747596.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    height: 200px;
+    display: block;
+}
+
+section#login > div#formulario {
+    padding: 10px;
+
+}
