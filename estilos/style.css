@@ -48,10 +48,20 @@ div.campo > span {
     padding: 5px;
 }
 
-div.campo >input {
+div.campo > input {
     background-color: #E8AA9B;
-    width: 100%;
+    width: calc(100% - 48px);
     font-size: 1em;
+    
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 section#login {
